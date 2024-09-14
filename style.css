@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 :root {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 html,
@@ -7,9 +10,11 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family: 'Bebas Neue';
 }
 
-.header-content-border {
+.header-content-border,
+.hero-content-border {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +43,8 @@ body {
     flex-direction: row;
     align-items: center;
     margin-left: 20px;
+    background-color:#5ee2e2;
+    border: 4px ridge #023047;
 }
 
 .logo {
@@ -51,7 +58,8 @@ body {
 .title {
     margin: 0px;
     font-size: 3rem;
-    color: #caf0f8;
+    color: #219ebc;
+    padding-right: .8rem;
 }
 
 .nav-links {
@@ -65,4 +73,31 @@ body {
     flex-direction: row;
     justify-content: center;
     font-size: 2rem;
+    text-decoration: none;
+}
+
+.hero-text-and-image {
+    background-color: #caf0f8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text-title {
+    margin: 0px;
+}
+
+.hero-title {
+    color:#c77a21;
+}
+
+.hero-text-body {
+    margin: 0px;
+}
+
+.hero-text {
+    width: 16rem;
+    font-size: 1.5rem;
+    color: #18738a;
+    margin: 0px;
 }
