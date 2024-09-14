@@ -9,11 +9,17 @@ body {
     border: 0px;
 }
 
-.header-container {
-    height: 8rem;
-    background-color: #219ebc;
+.header-content-border {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    height: 7.5rem;
+    background-color: #219ebc;
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
@@ -21,9 +27,10 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 100rem;
-    height: 8rem;
+    height: 7.5rem;
     background-color: #219ebc;
     align-items: center;
+    width: 95%;
 }
 
 .logo-and-title {
