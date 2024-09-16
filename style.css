@@ -22,6 +22,7 @@ body {
 
 .header-content-border {
     position: sticky;
+    top: 0px;
 }
 
 .header-container {
