@@ -51,10 +51,10 @@ html {
 
 .hero-image {
     background-image: url(images/drums.jpg);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 90%;
     position: relative;
     top: 5rem;
 }
