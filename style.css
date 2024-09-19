@@ -7,12 +7,56 @@ html {
     height: 100%;
 }
 
+.header-container {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.header {
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+.drum {
+    color: orange;
+}
+
+.dog {
+    color: green;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
 .hero-image {
     background-image: url(images/drums.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    position: relative;
+    top: 5rem;
 }
 
 .hero-title {
