@@ -50,11 +50,11 @@ html {
 }
 
 .hero-image {
-    background-image: url(images/drums.jpg);
-    background-position: top;
+    background-image: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3)), url(images/drums.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90%;
+    height: 70rem;
     position: relative;
     top: 5rem;
 }
