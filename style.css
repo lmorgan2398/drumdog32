@@ -50,13 +50,14 @@ html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3)), url(images/drums.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3) 70%, rgb(255, 165, 0) 90%), url(images/drums.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 65rem;
     position: relative;
     top: 5rem;
+    z-index: -1;
 }
 
 .hero-title {
@@ -86,4 +87,24 @@ html {
     border-radius: 5px;
     border: none;
     margin-top: 2rem;
+}
+
+.services-container {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.services-content {
+    background-color: white;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0, .3) 0px 0px 5px 5px;
+}
+
+.services-title {
+    font-size: 4rem;
 }
