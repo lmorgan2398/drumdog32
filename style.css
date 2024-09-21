@@ -4,7 +4,6 @@ html {
     padding: 0;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
 }
 
 .header-container {
@@ -50,13 +49,13 @@ html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3) 70%, rgb(255, 165, 0) 90%), url(images/drums.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3), rgb(190, 124, 0) 95%), url(images/drums.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 65rem;
     position: relative;
-    top: 5rem;
+    top: 4rem;
     z-index: -1;
 }
 
@@ -90,21 +89,24 @@ html {
 }
 
 .services-container {
-    background-color: orange;
+    background-color: black;
+    background-image: linear-gradient(rgb(190, 124, 0), black 95%);
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    position: relative;
+    top: 4rem;
     padding-bottom: 4rem;
 }
 
 .services-content {
-    background-color: rgb(32, 29, 23);
-    width: 100rem;
-    max-width: 90%;
+    width: min(100rem, 90%);
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     border-radius: 5px;
     box-shadow: rgb(0, 0, 0) 0px 0px 20px 2px;
+    background-color: white;
 }
 
 .services-title-and-img {
@@ -112,6 +114,9 @@ html {
     padding: 4rem;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(32, 29, 23);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .services-img {
@@ -138,4 +143,38 @@ html {
 
 .your {
     color: orange;
+}
+
+.services {
+    background-color: white;
+    width: 100%;
+    padding: 4rem;
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services > * {
+    width: min(300px, 50%)
+}
+
+.service {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0;
+}
+
+
+.service h3{
+    border-bottom: 4px solid orange;
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.service p {
+    padding-top: 10px;
+    margin: 0px;
+    font-size: 1.2rem;
 }
