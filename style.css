@@ -186,3 +186,21 @@ html {
     margin: 0px;
     font-size: 1.2rem;
 }
+
+.sample-container {
+    position: relative;
+    top: 4rem;
+    background-color: black;
+}
+
+.sample {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.sample-video {
+    width: min(100rem, 40%);
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 0px 24px 8px green;
+}
