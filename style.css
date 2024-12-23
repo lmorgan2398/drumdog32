@@ -195,12 +195,28 @@ html {
 
 .sample {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 4rem 0;
+    gap: 8rem;
 }
 
 .sample-video {
     width: min(100rem, 40%);
     aspect-ratio: 16 / 9;
     box-shadow: 0 0px 24px 8px green;
+}
+
+.sample-text {
+    width: min(100rem, 40%);
+}
+
+.sample-text-title {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.sample-text-body {
+    font-size: 1.8rem;
+    color: orange;
+    line-height: 1.3;
 }
