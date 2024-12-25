@@ -2,6 +2,21 @@
     --header-background: black;
     --header-text: white;
     --hero-gradient: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3), rgb(190, 124, 0) 95%);
+    --hero-body-text: white;
+    --services-background: linear-gradient(rgb(190, 124, 0), black 95%);
+    --sample-background: black;
+    --sample-title-text: white;
+
+}
+
+:root.light {
+    --header-background: lightgray;
+    --header-text: black;
+    --hero-gradient: linear-gradient(rgba(255, 255, 255, 0.541), rgba(255, 209, 124, 0.445), rgb(190, 124, 0) 95%);
+    --hero-body-text: black;
+    --services-background: linear-gradient(rgb(190, 124, 0), lightgray 95%);
+    --sample-background: lightgray;
+    --sample-title-text: black;
 }
 
 body, 
@@ -46,9 +61,15 @@ html {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    align-items: center;
 }
 
-.nav a {
+.theme-button {
+    background-color: var(--header-background);
+}
+
+.nav a,
+.theme-button {
     text-decoration: none;
     color: var(--header-text);
     font-size: 1.5rem;
@@ -75,7 +96,7 @@ html {
 }
 
 .hero-body {
-    color: white;
+    color: var(--hero-body-text);
     max-width: 30%;
     font-size: calc(1.5rem + 1vw);
     padding-left: 5%;
@@ -96,7 +117,7 @@ html {
 
 .services-container {
     background-color: black;
-    background-image: linear-gradient(rgb(190, 124, 0), black 95%);
+    background-image: var(--services-background);
     display: flex;
     justify-content: center;
     position: relative;
@@ -196,7 +217,7 @@ html {
 .sample-container {
     position: relative;
     top: 4rem;
-    background-color: black;
+    background-color: var(--sample-background);
 }
 
 .sample {
@@ -217,7 +238,7 @@ html {
 }
 
 .sample-text-title {
-    color: white;
+    color: var(--sample-title-text);
     font-size: 3.5rem;
 }
 
