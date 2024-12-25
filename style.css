@@ -1,3 +1,9 @@
+:root.dark {
+    --header-background: black;
+    --header-text: white;
+    --hero-gradient: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3), rgb(190, 124, 0) 95%);
+}
+
 body, 
 html {
     margin: 0;
@@ -8,7 +14,7 @@ html {
 
 .header-container {
     width: 100%;
-    background-color: black;
+    background-color: var(--header-background);
     display: flex;
     justify-content: center;
     position: fixed;
@@ -16,7 +22,7 @@ html {
 }
 
 .header {
-    background-color: black;
+    background-color: var(--header-background);
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -44,12 +50,12 @@ html {
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: var(--header-text);
     font-size: 1.5rem;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgb(0, 0, 0, .1), rgb(255, 165, 0, .3), rgb(190, 124, 0) 95%), url(images/drums.jpg);
+    background-image: var(--hero-gradient), url(images/drums.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
