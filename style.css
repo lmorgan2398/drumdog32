@@ -12,7 +12,7 @@
 :root.light {
     --header-background: lightgray;
     --header-text: black;
-    --hero-gradient: linear-gradient(rgba(255, 255, 255, 0.541), rgba(255, 209, 124, 0.445), rgb(190, 124, 0) 95%);
+    --hero-gradient: linear-gradient(rgba(255, 255, 255, 0.808), rgba(255, 208, 122, 0.596), rgb(190, 124, 0) 95%);
     --hero-body-text: black;
     --services-background: linear-gradient(rgb(190, 124, 0), lightgray 95%);
     --sample-background: lightgray;
